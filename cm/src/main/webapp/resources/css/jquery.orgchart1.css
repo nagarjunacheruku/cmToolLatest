@@ -1,0 +1,287 @@
+
+div.orgChart {
+     margin: 10px;
+    padding: 20px;
+    background-color: lavenderblush;
+        overflow: auto;
+}
+
+div.orgChart h2 {
+  margin : 0px;
+  font-size : 16px;
+  font-weight: normal;
+  min-height: 20px;
+}
+
+div.orgChart h2:hover {
+  background: #fcfaca;
+  cursor: text;
+}
+
+div.orgChart ul {
+  list-style : none;
+  margin : 4px;
+  padding : 0px;
+  font-size : 0.8em;
+  text-align : left;
+}
+
+div.orgChart ul.stack,
+div.orgChart ul.stack ul { text-align : center; }
+
+div.orgChart table { width : 100%; }
+
+div.orgChart tr.lines td.line {
+  width : 1px;
+  height : 20px;
+}
+
+div.orgChart tr.lines td.top { border-top : 1px solid black; }
+
+div.orgChart tr.lines td.left { border-right : 1px solid black; }
+
+div.orgChart tr.lines td.right { border-left : 0px solid black; }
+
+div.orgChart tr.lines td.half { width : 50%; }
+
+div.orgChart td {
+  text-align : center;
+  vertical-align : top;
+  padding : 0px 2px;
+}
+
+div.orgChart div.node {
+  /* cursor : default;
+  border : 1px solid #e7e7e7;
+  display : inline-block;
+  padding : 5px;
+  width : 96px;
+  height : 60px;
+  background: #ffffff; Old browsers
+  background: -moz-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); FF3.6+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #fbfbfb)); Chrome,Safari4+
+  background: -webkit-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); Chrome10+,Safari5.1+
+  background: -o-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); Opera 11.10+
+  background: -ms-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); IE10+
+  background: linear-gradient(to bottom, #ffffff 0%, #fbfbfb 100%); W3C
+  line-height : 1.3em;
+  border-radius : 4px;
+  -moz-border-radius : 4px;
+  -webkit-border-radius : 4px;
+  position: relative;
+  box-shadow: 1px 1px 0px #ddd; */
+  cursor: default;
+    border: 1px solid #e7e7e7;
+    display: inline-block;
+    padding: 5px;
+    width: 145px;
+    height: 70px;
+    background: #64AEDA;
+/*     background: -moz-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); */
+/*     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #fbfbfb)); */
+/*     background: -webkit-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); */
+/*     background: -o-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); */
+/*     background: -ms-linear-gradient(top, #ffffff 0%, #fbfbfb 100%); */
+/*     background: linear-gradient(to bottom, #ffffff 0%, #fbfbfb 100%); */
+	background: linear-gradient(to bottom, rgba(19, 19, 19, 0.41) 0%, #fbfbfb 100%)
+    line-height: 1.3em;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    position: relative;
+    box-shadow: 1px 1px 0px #ddd;
+    border-radius: 12px;
+    border-color: sandybrown;
+}
+
+.org-add-button,
+.org-del-button,
+#org-list-button,
+.org-confirm-del-button {
+  position: absolute;
+  font-size: 12px;
+}
+
+#org-list-button {
+    background: url(../images/icon.png) no-repeat;
+    width: 30px;
+    height: 24px;
+    bottom: 41px;
+    right: 5px;
+}
+
+.org-add-button {
+bottom: 0px;
+    top: 45px;
+  left: 5px;
+  padding-left: 13px;
+  background: url(../images/add.png) no-repeat 0 3px;
+}
+
+
+.org-add-button:hover,
+#org-list-button:hover,
+.org-del-button:hover {
+  background-color: #eef;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.org-del-button {
+  background: url(../images/delete.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    bottom: 4px;
+    right: 5px;
+}
+
+
+.org-input { width: 90px; }
+
+.org-confirm-del-button { display: none; }
+
+/* #selectMenu{
+    margin-top: -24px;
+    margin-left: 140px;
+    display: none;
+    height: 61px;
+    width: 89px;
+} */
+
+.mandatory{
+	color: red;
+	font-weight: bold;
+}
+.data{
+	height: 50px;
+	font-weight: bold;
+}
+.condition{
+	color: orange;
+	font-weight: bold;
+}
+.docFields{
+	 color: #131111;
+	 float : left;
+	display:none;
+	width: 100%;
+	overflow:auto;
+}
+.docCheckbox{
+	    width: 5%;
+    float: left;
+}
+.docName{
+	width: 90%;
+    float: left;
+	
+}
+.node-h6{
+	    font-size: 14px;
+    margin-top: 2px;
+}
+#filter{
+        color: black;
+    margin-top: -4px;
+    width: 98px;
+    margin-bottom: 8px;
+    position: relative;
+    top: 30px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+   float: left;
+      margin-left: 5px;
+      display:none;
+}
+.drpCss{
+    height: 70px;
+    line-height: 27px;
+    width: 125px;
+    margin-right: 10px;
+    margin-top: -67px;
+    margin-left: 138px;
+    z-index:1;
+    position:absolute;
+    display:none;
+}
+.drpCss text{
+    color:black;
+    width: 113px;
+    
+}
+#selectMenu{
+        color: black;
+    height: 100px;
+    line-height: 27px;
+    width: 125px;
+    margin-top: -8px;
+     /* overflow: auto; */
+    border-radius: 5px;
+    padding: 35px 5px 5px 10px;
+        display:none;
+    /* margin-right: 10px;
+    margin-top: -39px;
+    margin-left: 138px;
+    z-index:1;
+    position:relative; */
+}
+.divHeight{
+	height : 500px;
+
+}
+.documents{
+	    overflow: auto;
+	    height : 500px;
+}
+.orgchartDivHeight{
+	height : 450px;
+}
+.panel-header{
+	color:#fff;
+	margin-left:200px;
+}
+
+#popup_box { 
+	display:none; /* Hide the DIV */
+	position:fixed;  
+	_position:absolute; /* hack for internet explorer 6 */  
+	height:100px;  
+	width:600px;  
+	background:#FFFFFF;  
+	left: 300px;
+	top: 150px;
+	z-index:100; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
+	margin-left: 15px;  
+	
+	/* additional features, can be omitted */
+	border:2px solid #ff0000;  	
+	padding:15px;  
+	font-size:15px;  
+	-moz-box-shadow: 0 0 5px #ff0000;
+	-webkit-box-shadow: 0 0 5px #ff0000;
+	box-shadow: 0 0 5px #ff0000;
+	
+}
+
+#container {
+	background: #d2d2d2; /*Sample*/
+	width:100%;
+	height:100%;
+}
+
+a{  
+cursor: pointer;  
+text-decoration:none;  
+} 
+
+/* This is for the positioning of the Close Link */
+#popupBoxClose {
+	font-size:20px;  
+	line-height:15px;  
+	right:5px;  
+	top:5px;  
+	position:absolute;  
+	color:#6fa5e2;  
+	font-weight:500;  
